@@ -1,0 +1,29 @@
+.task {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  padding: 15px 25px 30px 20px;
+  width: 30px;
+  height: 30px;
+  margin:  0 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.openTask {
+  background-color: orange;
+}
+
+.openTask:hover {
+  transition: 350ms;
+  background-color: chocolate;
+}
+
+.closedTask {
+  background-color: grey;
+  color: white
+}
+
+.completeTask {
+  border: 3px solid green;
+}
