@@ -1,34 +1,38 @@
 import React from 'react'
 import QnA from '../QnA/QnA'
+import WrittenPage from '../writtenPage/writtenPage'
 import './TaskRenderer.css'
 
 class TaskRenderer extends React.Component {
-  renderTitle() {
-    return <h1 className="qTitle">{'Question ' + (this.props.currentTask + 1)}</h1>
-  }
-
   renderCurrentTask() {
-    let task = this.props.tasks[this.props.currentTask]
+    let i = this.props.currentTask
+    let task = this.props.tasks[i]
     let type = task.type
     if (type === 'qa') {
       return (
-        <QnA className="QnA" task={task} onComplete={this.props.onComplete} changeCurrent={this.props.changeCurrent} />
+        <QnA
+          className="QnA"
+          task={task}
+          onComplete={() => this.props.onComplete(i)}
+          changeCurrent={input => this.props.changeCurrent(i, input)}
+        />
+      )
+    } else if (type === 'p') {
+      return (
+        <WrittenPage
+          className="written"
+          page={task}
+          onComplete={() => {
+            console.log('tesijoaijsdf' + i)
+            this.props.onComplete(i)
+          }}
+        />
       )
     }
-    // else if (type === 'qr') {
-    //   return (
-    //     <QnA className="qr" task={task} onComplete
-    //   )
-    // }
   }
 
   render() {
-    return (
-      <div className="TaskDiv">
-        {this.renderTitle()}
-        {this.renderCurrentTask()}
-      </div>
-    )
+    return <div className="TaskDiv">{this.renderCurrentTask()}</div>
   }
 }
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../../logo.svg'
 import TaskList from '../TaskList/TaskList.js'
 import TaskRenderer from '../TaskRenderer/TaskRenderer'
 import './App.css'
@@ -11,7 +10,20 @@ class App extends React.Component {
     this.state = {
       tasks: [
         {
-          order: 0,
+          order: 'INTRO',
+          type: 'p',
+          info: {
+            title: 'INSTRUCTIONS',
+            subtitle: 'Read Carefully!',
+            para:
+              'instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
+            button: "I'm Ready!"
+          },
+          open: true,
+          done: false
+        },
+        {
+          order: 1,
           type: 'qa',
           info: {
             question: 'Testing',
@@ -22,19 +34,48 @@ class App extends React.Component {
           done: false
         },
         {
-          order: 1,
-          open: false,
-          done: false
-        },
-        {
           order: 2,
-          open: false,
+          type: 'qa',
+          info: {
+            question: 'Testing',
+            answer: 'TESTING'
+          },
+          current: '',
+          open: true,
           done: false
         },
         {
           order: 3,
+          type: 'qa',
+          info: {
+            question: 'Testing',
+            answer: 'TESTING'
+          },
+          current: '',
           open: false,
           done: false
+        },
+        {
+          order: 4,
+          type: 'qa',
+          info: {
+            question: 'Testing',
+            answer: 'TESTING'
+          },
+          current: '',
+          open: true,
+          done: false
+        },
+        {
+          order: 'END',
+          type: 'p',
+          info: {
+            title: 'Congratulations!',
+            subtitle: 'You finished the hunt!',
+            para:
+              'instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions'
+          },
+          open: true
         }
       ],
       taskNum: 0
@@ -48,7 +89,9 @@ class App extends React.Component {
   completeTask(taskNum) {
     let tasks = this.state.tasks
     tasks[taskNum].done = true
-    tasks[taskNum + 1].open = true
+    if (tasks.length !== taskNum + 1) {
+      tasks[taskNum + 1].open = true
+    }
     this.setState({tasks: tasks})
   }
 

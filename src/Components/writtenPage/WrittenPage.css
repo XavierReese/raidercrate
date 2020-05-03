@@ -1,0 +1,35 @@
+.congrats {
+  background-color: rgb(90, 157, 212);
+  box-shadow: 2px 2px black;
+  outline: none;
+  padding: 10px;
+  width: 450px;
+  margin: 0 auto;
+  font-size: 50px;
+}
+
+.subtitle {
+  margin-top: 5vh;
+}
+
+p {
+  width: 40vw;
+  margin: 10vh auto;
+  min-width: 500px;
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  font-size: 30px;
+  background-color: rgb(90, 157, 212);
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+  outline: none;
+}
+
+.button:hover {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+  cursor: pointer;
+}

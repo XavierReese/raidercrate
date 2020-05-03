@@ -10,7 +10,7 @@ class TaskOption extends React.Component {
 
   handleClick() {
     if (this.props.task.open) {
-      this.props.newTask(this.props.num)
+      this.props.newTask(this.props.order)
     }
   }
 
@@ -18,20 +18,21 @@ class TaskOption extends React.Component {
     let state = ''
     let task = this.props.task
 
-    console.log(task)
-
     if (task.open) {
       state += 'openTask'
       if (task.done) {
-        console.log('heyo we know you done')
         state += ' completeTask'
       }
     } else {
       state += 'closedTask'
     }
+
+    if (typeof this.props.task.order === 'string') state += ' string'
+
+    if (this.props.current) state += ' current'
     return (
       <button className={'task ' + state} onClick={this.handleClick}>
-        <li className="taskNum">{this.props.num + 1}</li>
+        <li className="taskNum">{this.props.task.order}</li>
       </button>
     )
   }

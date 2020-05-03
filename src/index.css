@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: url('http://www.svsd.net/cms/lib5/PA01001234/Centricity/Domain/1/SVSD_8_22_16_99.jpg');
+  background-size: cover; */
+  background-color: rgb(187, 222, 245);
 }
 
 code {

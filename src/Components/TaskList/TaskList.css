@@ -1,4 +1,45 @@
-.taskList {
+.header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  height: 13vh;
+  margin-left: 5vw;
+  border-radius: 50%;
+  box-shadow: 0 0 2vh 1vh white;
+  /* background-color: white;
+  padding: 20px; */
+}
+
+.header * {
+  display: inline;
+}
+
+nav {
+  position: relative;
+  left: -7%;
   margin: 0 auto;
-  margin-top: 50px;
+  max-width: 60vw;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+ul {
+  padding: 0;
+}
+
+@media only screen and (max-device-width: 480px) {
+  nav {
+    margin-left: 15vw;
+    padding: 10px 0;
+    width: 55vw;
+    background-color: darkgrey;
+  }
 }

@@ -5,41 +5,31 @@ class QnA extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {
-      input: ''
-    }
-
     this.onChange = this.onChange.bind(this)
-    this.componentDidMount = this.componentDidMount.bind(this)
-  }
-
-  componentDidMount() {
-    this.setState({input: this.props.task.current})
   }
 
   onChange(e) {
     let input = e.target.value
-    this.props.changeCurrent(this.props.task.order, input)
-    this.setState({input: input}, () => {
-      if (input.toUpperCase() === this.props.task.info.answer.toUpperCase()) {
-        if (!this.state.done) {
-          this.props.onComplete(this.props.task.order)
-        }
-        console.log('correct')
-        console.log(this.state)
+    console.log('here')
+    this.props.changeCurrent(input)
+    if (input.toUpperCase() === this.props.task.info.answer.toUpperCase()) {
+      if (!this.props.task.done) {
+        this.props.onComplete()
       }
-    })
+    }
   }
 
   render() {
     let divClass = 'qnadiv'
-    if (this.state.done) {
+    if (this.props.task.done) {
+      console.log('should be green')
       divClass += ' completeQnAdiv'
     }
     return (
       <div className={divClass}>
+        <h1>{'Question ' + this.props.task.order}</h1>
         <p className="question">{this.props.task.info.question}</p>
-        <input className="answer" onChange={this.onChange} value={this.state.input} />
+        <input className="answer" onChange={this.onChange} value={this.props.task.current} />
       </div>
     )
   }
