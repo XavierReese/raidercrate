@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/raidercrate/static/css/main.e46c287c.chunk.css",
-    "main.js": "/raidercrate/static/js/main.4741edbc.chunk.js",
-    "main.js.map": "/raidercrate/static/js/main.4741edbc.chunk.js.map",
+    "main.css": "/raidercrate/static/css/main.7963eb99.chunk.css",
+    "main.js": "/raidercrate/static/js/main.db2f0847.chunk.js",
+    "main.js.map": "/raidercrate/static/js/main.db2f0847.chunk.js.map",
     "runtime-main.js": "/raidercrate/static/js/runtime-main.c53c2178.js",
     "runtime-main.js.map": "/raidercrate/static/js/runtime-main.c53c2178.js.map",
-    "static/js/2.6528e066.chunk.js": "/raidercrate/static/js/2.6528e066.chunk.js",
-    "static/js/2.6528e066.chunk.js.map": "/raidercrate/static/js/2.6528e066.chunk.js.map",
+    "static/js/2.5b7768ae.chunk.js": "/raidercrate/static/js/2.5b7768ae.chunk.js",
+    "static/js/2.5b7768ae.chunk.js.map": "/raidercrate/static/js/2.5b7768ae.chunk.js.map",
     "index.html": "/raidercrate/index.html",
-    "precache-manifest.f717761f00b8c8660ce2db7e2abef8ad.js": "/raidercrate/precache-manifest.f717761f00b8c8660ce2db7e2abef8ad.js",
+    "precache-manifest.acdd13c2951dce33d4f78dd45faf28a4.js": "/raidercrate/precache-manifest.acdd13c2951dce33d4f78dd45faf28a4.js",
     "service-worker.js": "/raidercrate/service-worker.js",
-    "static/css/main.e46c287c.chunk.css.map": "/raidercrate/static/css/main.e46c287c.chunk.css.map",
-    "static/js/2.6528e066.chunk.js.LICENSE.txt": "/raidercrate/static/js/2.6528e066.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/raidercrate/static/media/logo.5d5d9eef.svg"
+    "static/css/main.7963eb99.chunk.css.map": "/raidercrate/static/css/main.7963eb99.chunk.css.map",
+    "static/js/2.5b7768ae.chunk.js.LICENSE.txt": "/raidercrate/static/js/2.5b7768ae.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/raidercrate/static/media/logo.44ea7f76.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c53c2178.js",
-    "static/js/2.6528e066.chunk.js",
-    "static/css/main.e46c287c.chunk.css",
-    "static/js/main.4741edbc.chunk.js"
+    "static/js/2.5b7768ae.chunk.js",
+    "static/css/main.7963eb99.chunk.css",
+    "static/js/main.db2f0847.chunk.js"
   ]
 }
