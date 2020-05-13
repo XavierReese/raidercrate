@@ -29,7 +29,12 @@ class QnA extends React.Component {
       <div className={divClass}>
         <h1>{'Question ' + this.props.task.order}</h1>
         <p className="question">{this.props.task.info.question}</p>
-        <input className="answer" onChange={this.onChange} value={this.props.task.current} />
+        <input
+          placeholder="Enter Your Answer Here"
+          className="answer"
+          onChange={this.onChange}
+          value={this.props.task.current}
+        />
       </div>
     )
   }

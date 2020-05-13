@@ -1,0 +1,19 @@
+button.section {
+  cursor: pointer;
+  transition: .1s ease;
+}
+
+p.sectionNum {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #BBB;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+button.section:hover {
+  background-color: #555;
+}

@@ -10,7 +10,7 @@ class TaskOption extends React.Component {
 
   handleClick() {
     if (this.props.task.open) {
-      this.props.newTask(this.props.order)
+      this.props.updateSection(this.props.order)
     }
   }
 

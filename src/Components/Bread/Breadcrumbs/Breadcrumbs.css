@@ -1,0 +1,49 @@
+.breadcrumbs {
+  position: relative;
+  top: 22vh;
+  text-align: left;
+}
+
+.breadcrumbs li {
+  float: left;
+  color: #fff;
+  background: darkcyan;
+  list-style-type: none;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.breadcrumbs li::before,
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  border-color: darkcyan;
+  border-style: solid;
+  border-width: 20px 5px;
+}
+
+.breadcrumbs li::after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: darkcyan;
+}
+.breadcrumbs li::before {
+  left: -10px;
+  border-left-color: transparent;
+}
+
+.breadcrumbs li:hover {
+  background-color: blue;
+}
+.breadcrumbs li:hover::before {
+  border-color: blue;
+  border-left-color: transparent;
+}
+.breadcrumbs li:hover::after {
+  border-left-color: blue;
+}

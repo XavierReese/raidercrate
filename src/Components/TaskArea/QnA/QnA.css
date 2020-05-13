@@ -1,0 +1,40 @@
+.completeQnAdiv {
+}
+
+.completeQnAdiv input {
+  background-color: rgb(104, 148, 127);
+  box-shadow: 0 0 10px 5px rgb(150, 200, 175);
+  outline: none;
+}
+
+input {
+  width: 287px;
+  padding: .88rem 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 2.22rem;
+  color: #010c3f;
+  text-align: center;
+  font-size: 1rem;
+  outline: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.question {
+  width: 25vw;
+  margin: 10vh auto;
+  min-width: 350px;
+  font-size: 20px;
+  max-width: 1000px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  p.question {
+    margin: 8vh auto;
+    min-width: 80vw;
+    font-size: 18px;
+  }
+}

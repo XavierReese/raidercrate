@@ -13,8 +13,8 @@ class TaskRenderer extends React.Component {
         <QnA
           className="QnA"
           task={task}
-          onComplete={() => this.props.onComplete(i)}
-          changeCurrent={input => this.props.changeCurrent(i, input)}
+          onComplete={() => this.props.onComplete(this.props.currentSection, i)}
+          changeCurrent={input => this.props.changeCurrent(this.props.currentSection, i, input)}
         />
       )
     } else if (type === 'p') {
@@ -23,8 +23,7 @@ class TaskRenderer extends React.Component {
           className="written"
           page={task}
           onComplete={() => {
-            console.log('tesijoaijsdf' + i)
-            this.props.onComplete(i)
+            this.props.onComplete(this.props.currentSection, i)
           }}
         />
       )
