@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/raidercrate/static/css/main.04eb2f7b.chunk.css",
+    "main.css": "/raidercrate/static/css/main.1ec0558c.chunk.css",
     "main.js": "/raidercrate/static/js/main.d3297858.chunk.js",
     "main.js.map": "/raidercrate/static/js/main.d3297858.chunk.js.map",
     "runtime-main.js": "/raidercrate/static/js/runtime-main.c53c2178.js",
@@ -8,16 +8,16 @@
     "static/js/2.5b7768ae.chunk.js": "/raidercrate/static/js/2.5b7768ae.chunk.js",
     "static/js/2.5b7768ae.chunk.js.map": "/raidercrate/static/js/2.5b7768ae.chunk.js.map",
     "index.html": "/raidercrate/index.html",
-    "precache-manifest.a209b9adfe4b5ea81c7f7b4be8832f7f.js": "/raidercrate/precache-manifest.a209b9adfe4b5ea81c7f7b4be8832f7f.js",
+    "precache-manifest.ddb60c04b8825f316cd0fe26e9d8a509.js": "/raidercrate/precache-manifest.ddb60c04b8825f316cd0fe26e9d8a509.js",
     "service-worker.js": "/raidercrate/service-worker.js",
-    "static/css/main.04eb2f7b.chunk.css.map": "/raidercrate/static/css/main.04eb2f7b.chunk.css.map",
+    "static/css/main.1ec0558c.chunk.css.map": "/raidercrate/static/css/main.1ec0558c.chunk.css.map",
     "static/js/2.5b7768ae.chunk.js.LICENSE.txt": "/raidercrate/static/js/2.5b7768ae.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/raidercrate/static/media/logo.44ea7f76.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c53c2178.js",
     "static/js/2.5b7768ae.chunk.js",
-    "static/css/main.04eb2f7b.chunk.css",
+    "static/css/main.1ec0558c.chunk.css",
     "static/js/main.d3297858.chunk.js"
   ]
 }
