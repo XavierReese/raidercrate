@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5cf805d4b6eca06f02f1ae79e12e2dfc",
+    "revision": "0dcbfc68c1309da83d7d66c3e5601848",
     "url": "/raidercrate/index.html"
   },
   {
-    "revision": "0b8ec740166bff6bee22",
-    "url": "/raidercrate/static/css/main.bb108a0c.chunk.css"
+    "revision": "71a49f93d4370b2b330a",
+    "url": "/raidercrate/static/css/main.3ea8a4b3.chunk.css"
   },
   {
     "revision": "2b97f71bc226e9eb3538",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raidercrate/static/js/2.5b7768ae.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0b8ec740166bff6bee22",
+    "revision": "71a49f93d4370b2b330a",
     "url": "/raidercrate/static/js/main.d3297858.chunk.js"
   },
   {
