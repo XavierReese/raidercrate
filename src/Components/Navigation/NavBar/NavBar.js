@@ -4,6 +4,13 @@ import NavSection from '../NavSection/NavSection'
 import logo from '../../../logo.png'
 
 class NavBar extends React.Component {
+  handleClick(i) {
+    console.log(i)
+    if (this.props.sections[i].open) {
+      this.props.updateSection(i)
+    }
+  }
+
   renderNavBar() {
     let sections = this.props.sections
     let taskList = []
@@ -29,8 +36,12 @@ class NavBar extends React.Component {
         className += ' closed'
       }
 
+      if (sections[sections.length - 1].open) {
+        className += ' allDone'
+      }
+
       taskList.push(
-        <li className={className} key={i}>
+        <li className={className} key={i} onClick={() => this.handleClick(i)}>
           <NavSection
             sectionInfo={sections[i]}
             updateSection={() => this.props.updateSection(i)}

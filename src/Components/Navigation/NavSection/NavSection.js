@@ -4,14 +4,6 @@ import './NavSection.css'
 class NavSection extends React.Component {
   constructor(props) {
     super(props)
-
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick() {
-    if (this.props.sectionInfo.open) {
-      this.props.updateSection()
-    }
   }
 
   render() {

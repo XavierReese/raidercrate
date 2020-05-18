@@ -1,10 +1,8 @@
-.completeQnAdiv {
-}
-
 .completeQnAdiv input {
   background-color: rgb(104, 148, 127);
-  box-shadow: 0 0 10px 5px rgb(150, 200, 175);
+  border: 5px solid #235e30;
   outline: none;
+  box-sizing: border-box;
 }
 
 input {

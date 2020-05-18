@@ -17,121 +17,44 @@ class App extends React.Component {
           furthestOpen: 0,
           tasks: [
             {
-              order: 'INTRO',
+              order: 'INSTRUCTIONS',
               type: 'p',
               info: {
                 title: 'INSTRUCTIONS',
                 subtitle: 'Read Carefully!',
                 para:
-                  'instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
+                  'Each of the four (which could be more or less easily) sections can be done independently, although within the sections there is an order. instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
                 button: "I'm Ready!"
               },
               open: true,
-              done: false
-            },
-            {
-              order: 1,
-              type: 'qa',
-              info: {
-                question: 'Testing testing testing testing testing testing testing testing testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
-              done: false
-            },
-            {
-              order: 2,
-              type: 'qa',
-              info: {
-                question: 'Testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
-              done: false
-            },
-            {
-              order: 3,
-              type: 'qa',
-              info: {
-                question: 'Testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
-              done: false
-            },
-            {
-              order: 4,
-              type: 'qa',
-              info: {
-                question: 'Testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
               done: false
             }
           ]
         },
         {
           order: 1,
-          open: true,
+          open: false,
           done: false,
           furthestOpen: 0,
           tasks: [
             {
-              order: 'INTRO',
+              order: 1,
               type: 'p',
               info: {
-                title: 'INSTRUCTIONS',
+                title: 'Instructions for Section 1',
                 subtitle: 'Read Carefully!',
                 para:
-                  'instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
-                button: "I'm Ready!"
+                  'This could be full of riddles that are done at home. instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
+                button: "Let's Go!"
               },
               open: true,
-              done: false
-            },
-            {
-              order: 1,
-              type: 'qa',
-              info: {
-                question: 'Testing testing testing testing testing testing testing testing testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
               done: false
             },
             {
               order: 2,
               type: 'qa',
               info: {
-                question: 'Testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
-              done: false
-            },
-            {
-              order: 3,
-              type: 'qa',
-              info: {
-                question: 'Testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
-              done: false
-            },
-            {
-              order: 4,
-              type: 'qa',
-              info: {
-                question: 'Testing',
+                question: 'Testing testing testing testing testing testing testing testing testing',
                 answer: 'TESTING'
               },
               current: '',
@@ -142,39 +65,28 @@ class App extends React.Component {
         },
         {
           order: 2,
-          open: true,
+          open: false,
           done: false,
           furthestOpen: 0,
           tasks: [
             {
-              order: 'INTRO',
+              order: 1,
               type: 'p',
               info: {
-                title: 'INSTRUCTIONS',
+                title: 'Instructions for Section 2',
                 subtitle: 'Read Carefully!',
                 para:
-                  'instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
+                  'This could lead players from business to business in a walkable distance, with clues from structures, history facts, and hidden gems along the way. instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
                 button: "I'm Ready!"
               },
               open: true,
               done: false
             },
             {
-              order: 1,
-              type: 'qa',
-              info: {
-                question: 'Testing testing testing testing testing testing testing testing testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
-              done: false
-            },
-            {
               order: 2,
               type: 'qa',
               info: {
-                question: 'Testing',
+                question: 'Testing testing testing testing testing testing testing testing testing',
                 answer: 'TESTING'
               },
               current: '',
@@ -207,39 +119,28 @@ class App extends React.Component {
         },
         {
           order: 3,
-          open: true,
+          open: false,
           done: false,
           furthestOpen: 0,
           tasks: [
             {
-              order: 'INTRO',
+              order: 1,
               type: 'p',
               info: {
-                title: 'INSTRUCTIONS',
+                title: 'Instructions for Section 3',
                 subtitle: 'Read Carefully!',
                 para:
-                  'instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
+                  'This could mirror section 2, but in a different area. instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
                 button: "I'm Ready!"
               },
               open: true,
               done: false
             },
             {
-              order: 1,
-              type: 'qa',
-              info: {
-                question: 'Testing testing testing testing testing testing testing testing testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
-              done: false
-            },
-            {
               order: 2,
               type: 'qa',
               info: {
-                question: 'Testing',
+                question: 'Testing testing testing testing testing testing testing testing testing',
                 answer: 'TESTING'
               },
               current: '',
@@ -256,28 +157,30 @@ class App extends React.Component {
               current: '',
               open: false,
               done: false
-            },
-            {
-              order: 4,
-              type: 'qa',
-              info: {
-                question: 'Testing',
-                answer: 'TESTING'
-              },
-              current: '',
-              open: false,
-              done: false
             }
           ]
         },
         {
           order: 4,
-          open: true,
+          open: false,
           done: false,
           furthestOpen: 0,
           tasks: [
             {
-              order: 4,
+              order: 1,
+              type: 'p',
+              info: {
+                title: 'Instructions for Section 4',
+                subtitle: 'Read Carefully!',
+                para:
+                  'This could mirror section 2, but in a different area. Remember this whole time they can be taking photos for instagram.  instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions',
+                button: "I'm Ready!"
+              },
+              open: true,
+              done: false
+            },
+            {
+              order: 2,
               type: 'qa',
               info: {
                 question: 'Testing',
@@ -302,7 +205,7 @@ class App extends React.Component {
                 title: 'Congratulations!',
                 subtitle: 'You finished the hunt!',
                 para:
-                  'instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions'
+                  'Now the players can submit photos of their instagram story to a google form to be entered for a prize, whatever that may be. instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions instructions'
               },
               open: true
             }
@@ -353,8 +256,14 @@ class App extends React.Component {
     if (done) {
       section.done = true
       sections[secNum] = section
-      console.log('DONE! ' + secNum)
-      this.setState({sections: section})
+      if (secNum === 0) {
+        for (let i = 1; i < sections.length - 1; i++) {
+          console.log(sections.length + ' ' + i)
+          console.log(require('util').inspect(sections[i], {depth: null}))
+          sections[i].open = true
+        }
+      }
+      this.setState({sections: sections})
       this.checkAllComplete()
     }
   }
@@ -394,9 +303,12 @@ class App extends React.Component {
           currentSection={this.state.currentSection}
           updateSection={this.setSection}
         />
-        {/*
         <div className="notNav">
-          <Breadcrumbs section={this.state.sections[this.state.currentSection]} updateTask={this.setTask} />
+          <Breadcrumbs
+            currentTask={this.state.currentTask}
+            section={this.state.sections[this.state.currentSection]}
+            updateTask={this.setTask}
+          />
         </div>
         <TaskRenderer
           currentSection={this.state.currentSection}
@@ -405,7 +317,6 @@ class App extends React.Component {
           onComplete={this.completeTask}
           changeCurrent={this.editCurrent}
         />
-        */}
       </div>
     )
   }

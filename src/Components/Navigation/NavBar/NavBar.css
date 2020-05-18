@@ -4,14 +4,16 @@
   top: 0;
   left: 0;
   background-color: #111;
-  height: 10vh;
+  height: 10%;
   min-height: 100px;
 }
 
 .header img {
-  height: 6vh;
-  width: 6vh;
-  margin: 2vh 3vw;
+  height: 75%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 2vw;
   float: left;
 }
 
@@ -46,6 +48,14 @@
   cursor: pointer;
   transition: .15s ease;
   font-size: 200%;
+}
+
+.navSection.done {
+  background-color: #152515;
+}
+
+.navSection.allDone {
+  border-color: #254525;
 }
 
 .intro {
@@ -86,6 +96,10 @@
 	border-width: calc(3.5vh + 6px);
 	margin-top: calc(-3.5vh - 6px);
   border-radius: .4vh;
+}
+
+.secondToLast.allDone::before {
+  border-left-color: #254525;
 }
 
 /* .secondToLast:after {
@@ -139,8 +153,22 @@
   border-radius: .4vh;
 }
 
-/*////////////// Button states ///////////////*/
+.secondToLast.allDone::after {
+  border-left-color: #152515;
+}
 
+.ending.allDone::before {
+  border-left-color: #368;
+  /* border-left-color: #254525; */
+}
+
+.ending.allDone {
+  border-color: #368;
+  background-color: #134;
+}
+
+/*////////////// Button states ///////////////*/
+@media only screen and (min-device-width: 1200px) {
 .navSection:hover {
   background-color: #555;
   transition: width .2s ease margin .2s ease;
@@ -182,6 +210,7 @@
 .ending:active {
   width: 18%;
   margin: 0 -0.5%;
+}
 }
 
 /*    BREAKPOINTS      */
@@ -239,9 +268,5 @@
 
   .ending {
     margin: 0 5px;
-  }
-
-  .navSection:hover {
-    style: none !important;
   }
 }

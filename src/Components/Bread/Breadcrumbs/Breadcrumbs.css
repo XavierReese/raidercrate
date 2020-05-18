@@ -1,49 +1,101 @@
 .breadcrumbs {
-  position: relative;
-  top: 22vh;
+  position: fixed;
+  top: 12vh;
   text-align: left;
+  width: 20vw;
+  margin-left: 2vw;
 }
 
-.breadcrumbs li {
-  float: left;
+.bc {
   color: #fff;
-  background: darkcyan;
   list-style-type: none;
   position: relative;
-  height: 40px;
-  line-height: 40px;
+  display: block;
+  height: 75px;
+  line-height: 75px;
   text-align: center;
-  margin-right: 15px;
-  padding: 0 5px;
+  font-size: 200%;
+  margin: 1vh;
+  border-radius: 15px;
+  transition: background-color .1s ease border-color .1s ease;
+}
+
+.bc.open {
   cursor: pointer;
+  border: 6px solid #194e91;
+  background-color: #2871ce;
+  transition: background-color .1s ease border-color .1s ease;
 }
 
-.breadcrumbs li::before,
-.breadcrumbs li::after {
-  content: "";
-  position: absolute;
-  border-color: darkcyan;
-  border-style: solid;
-  border-width: 20px 5px;
+.bc.closed {
+  border: 6px solid #49668C;
+  background-color: #749ACC;
+  color: #ddd;
+  transition: background-color .1s ease border-color .1s ease;
 }
 
-.breadcrumbs li::after {
-  left: 100%;
-  border-color: transparent;
-  border-left-color: darkcyan;
-}
-.breadcrumbs li::before {
-  left: -10px;
-  border-left-color: transparent;
+.bc.current {
+  border-color: #2871ce;
+  background-color: #5ab6e7;
+  box-sizing: border-box;
+  width: 22vw;
+  transition: background-color .1s ease border-color .1s ease;
 }
 
-.breadcrumbs li:hover {
-  background-color: blue;
+@media only screen and (min-device-width: 600px) {
+  .bc.current {
+    padding-right: 4vw;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: calc(75px + 12px);
+  }
 }
-.breadcrumbs li:hover::before {
-  border-color: blue;
-  border-left-color: transparent;
+
+.bc.open:not(.current):hover {
+  background-color: #3084F2;
+  transition: background-color .1s ease border-color .1s ease;
 }
-.breadcrumbs li:hover::after {
-  border-left-color: blue;
+
+.bc.open:not(.current):active {
+  background-color: #5ab6e7;
+  border-color: #2871ce;
+  transition: background-color .1s ease border-color .1s ease;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .breadcrumbs {
+    position: absolute;
+    top: 90vh;
+    text-align: left;
+    width: 100vw;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+  }
+
+  .bc {
+    display: table-cell;
+    box-sizing: border-box;
+    border-radius: 0;
+    height: 10vh;
+    line-height: 10vh;
+  }
+
+  .bc.current {
+    border-color: #2871ce;
+    background-color: #5ab6e7;
+    border-top: none;
+  }
+
+  .bc.current::after {
+    content: '';
+    display: block;
+    position: relative;
+    background-color: #5ab6e7;
+    width: 100%;
+    height: 20px;
+    top: calc(-10vh - 12px);
+    z-index: 9999;
+  }
 }

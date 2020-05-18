@@ -31,7 +31,12 @@ class TaskRenderer extends React.Component {
   }
 
   render() {
-    return <div className="TaskDiv">{this.renderCurrentTask()}</div>
+    return (
+      <div className="TaskDiv">
+        <div className="colorSaver"></div>
+        {this.renderCurrentTask()}
+      </div>
+    )
   }
 }
 
