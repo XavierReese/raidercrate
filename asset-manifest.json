@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/raidercrate/static/css/main.5bf7c7c9.chunk.css",
-    "main.js": "/raidercrate/static/js/main.4a5935b0.chunk.js",
-    "main.js.map": "/raidercrate/static/js/main.4a5935b0.chunk.js.map",
+    "main.css": "/raidercrate/static/css/main.3ace2a8a.chunk.css",
+    "main.js": "/raidercrate/static/js/main.41177255.chunk.js",
+    "main.js.map": "/raidercrate/static/js/main.41177255.chunk.js.map",
     "runtime-main.js": "/raidercrate/static/js/runtime-main.c53c2178.js",
     "runtime-main.js.map": "/raidercrate/static/js/runtime-main.c53c2178.js.map",
     "static/js/2.5b7768ae.chunk.js": "/raidercrate/static/js/2.5b7768ae.chunk.js",
     "static/js/2.5b7768ae.chunk.js.map": "/raidercrate/static/js/2.5b7768ae.chunk.js.map",
     "index.html": "/raidercrate/index.html",
-    "precache-manifest.32292f92ba8d5c3247c8437e7ae649f3.js": "/raidercrate/precache-manifest.32292f92ba8d5c3247c8437e7ae649f3.js",
+    "precache-manifest.054f0dd1dad003df7d6c18dd217ca948.js": "/raidercrate/precache-manifest.054f0dd1dad003df7d6c18dd217ca948.js",
     "service-worker.js": "/raidercrate/service-worker.js",
-    "static/css/main.5bf7c7c9.chunk.css.map": "/raidercrate/static/css/main.5bf7c7c9.chunk.css.map",
+    "static/css/main.3ace2a8a.chunk.css.map": "/raidercrate/static/css/main.3ace2a8a.chunk.css.map",
     "static/js/2.5b7768ae.chunk.js.LICENSE.txt": "/raidercrate/static/js/2.5b7768ae.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/raidercrate/static/media/logo.44ea7f76.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c53c2178.js",
     "static/js/2.5b7768ae.chunk.js",
-    "static/css/main.5bf7c7c9.chunk.css",
-    "static/js/main.4a5935b0.chunk.js"
+    "static/css/main.3ace2a8a.chunk.css",
+    "static/js/main.41177255.chunk.js"
   ]
 }
