@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/raidercrate/precache-manifest.9add3c17cbbf0378d6f3641d5291a4aa.js"
+  "/raidercrate/precache-manifest.d2150f4eedaf30b3336a96bf4aedd052.js"
 );
 
 self.addEventListener('message', (event) => {
