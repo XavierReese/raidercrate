@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/raidercrate/static/css/main.43475112.chunk.css",
-    "main.js": "/raidercrate/static/js/main.235fbe69.chunk.js",
-    "main.js.map": "/raidercrate/static/js/main.235fbe69.chunk.js.map",
+    "main.js": "/raidercrate/static/js/main.9610548c.chunk.js",
+    "main.js.map": "/raidercrate/static/js/main.9610548c.chunk.js.map",
     "runtime-main.js": "/raidercrate/static/js/runtime-main.c53c2178.js",
     "runtime-main.js.map": "/raidercrate/static/js/runtime-main.c53c2178.js.map",
     "static/js/2.55ea4a0a.chunk.js": "/raidercrate/static/js/2.55ea4a0a.chunk.js",
     "static/js/2.55ea4a0a.chunk.js.map": "/raidercrate/static/js/2.55ea4a0a.chunk.js.map",
     "index.html": "/raidercrate/index.html",
-    "precache-manifest.50e8a14981eec2422c3fd3811b8f3da7.js": "/raidercrate/precache-manifest.50e8a14981eec2422c3fd3811b8f3da7.js",
+    "precache-manifest.598c43225b6dc4ad791c46dbdcf9c557.js": "/raidercrate/precache-manifest.598c43225b6dc4ad791c46dbdcf9c557.js",
     "service-worker.js": "/raidercrate/service-worker.js",
     "static/css/main.43475112.chunk.css.map": "/raidercrate/static/css/main.43475112.chunk.css.map",
     "static/js/2.55ea4a0a.chunk.js.LICENSE.txt": "/raidercrate/static/js/2.55ea4a0a.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.c53c2178.js",
     "static/js/2.55ea4a0a.chunk.js",
     "static/css/main.43475112.chunk.css",
-    "static/js/main.235fbe69.chunk.js"
+    "static/js/main.9610548c.chunk.js"
   ]
 }
